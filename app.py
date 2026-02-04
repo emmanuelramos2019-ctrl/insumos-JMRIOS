@@ -47,7 +47,7 @@ def obtener_stock():
     stock.columns = ['Insumo', 'Stock Actual']
     return stock
 
-USUARIOS = {"admin": "1234", "enfermera1": "med1", "farmacia": "farma1"}
+USUARIOS = {"marly": "23154782", "enfermera1": "med1", "farmacia": "farma1"}
 
 if 'auth' not in st.session_state: st.session_state.auth = False
 if 'page' not in st.session_state: st.session_state.page = "menu"
@@ -157,4 +157,4 @@ else:
                 st.table(df.tail(3))
             with c2:
                 st.write("### Resumen Stock")
-                st.table(obtener_stock().head(3))
+                st.table(obtener_stock().head(3)) 
