@@ -157,4 +157,4 @@ else:
                 st.table(df.tail(3))
             with c2:
                 st.write("### Resumen Stock")
-                st.table(obtener_stock().head(3)) 
+                st.table(obtener_stock().head(3)) git add . && git commit -m "u" && git push origin main
